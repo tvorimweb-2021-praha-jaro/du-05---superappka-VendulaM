@@ -24,10 +24,131 @@ body {
 }
 
 .obal {
-    width: 960px; /* obsah stránky je omezený do pruhu širokého 960px */
+    /*width: 960px;  obsah stránky je omezený do pruhu širokého 960px */
     margin: 0 auto; /* pruh je na stránce vycentrovaný */
     background: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
 }
 
 /* ----- zde začni psát vlastní CSS ----- */
+
+:root {
+    --barva-hlavni: #48418e;
+    --barva-2: #ffffff;
+}
+
+.obal {
+    max-width: 960px;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+
+}
+
+.navigace a {
+    text-align: center;
+    padding: 1rem;
+    width: 50%;
+}
+
+.navigace {
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 100px;
+    padding: 0;
+    margin: 0;
+    font-size: 2rem;
+}
+
+.hlavni-panel {
+    background-image: url(images/pozadi.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 2rem 4rem;
+    color: var(--barva-2);
+    display: flex;
+    flex-direction: column;
+}
+
+.hlavni-panel h1 {
+    font-size: 5rem;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hlavni-panel p {
+    font-size: 2.5rem;
+    font-weight: 300;
+    margin: 0;
+}
+
+.obal-tlacitka {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+} 
+
+.tlacitko {
+    font-size: 2rem;
+    color: var(--barva-2);
+    border: 2px solid var(--barva-2);
+    border-radius: 1rem;
+    padding: 1.5rem 5rem;
+    margin: 1.5rem;
+    text-align: center;
+    width: 100%;
+    } 
+
+.tlacitko-1 {
+    background-color: var(--barva-hlavni);
+}
+
+.karta {
+    text-align: center;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.karta img {
+    margin: 1rem;
+}
+
+.karta h2 {
+    color: var(--barva-hlavni);
+    font-size: 2rem;
+}
+
+.paticka {
+    background-color: var(--barva-hlavni);
+}
+
+.paticka p {
+    padding: 1rem;
+    margin:0;
+    color: var(--barva-2);
+    text-align: center;
+}
+
+.navigace a:hover {
+    background-color: var(--barva-hlavni);
+    color: var(--barva-2);
+}
+
+.tlacitko-1:hover,
+.tlacitko-1:focus {
+    background-color: inherit;
+    border-color: var(--barva-hlavni);
+
+}
+
+.tlacitko-2:hover,
+.tlacitko-2:focus {
+    background-color:  var(--barva-hlavni);
+    border-color: var(--barva-hlavni);
+}
